@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="module" src="../Sprint3/js/main.js"  ></script>
+
+    
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-default">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h4>Registro</h4>
+            </div>
+            <div class="panel-body">
+                <form  method="POST" id="form-registro" name="form-registro">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre">
+                            <div id="validationName" style="color:red;margin-bottom: 20px;"></div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido">
+                            <div id="validationApellido" style="color:red;margin-bottom: 20px;"></div>
+                            <label for="telefono">Telefono</label>
+                            <input type="text" class="form-control" name="telefono" id="telefono">
+                            <div id="validationPhone" style="color:red;margin-bottom: 20px;"></div>
+                            <label for="correo">Correo</label>
+                            <input type="email" class="form-control" name="correo" id="correo">
+                            <div id="validationEmail" style="color:red;margin-bottom: 20px;"></div>
+                            <label for="contrasena">Contraseña</label>
+                            <input type="text" class="form-control" name="contrasena" id="contrasena">
+                            <div id="validationPass" style="color:red;margin-bottom: 20px;"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" id="btn-submit-form" name="btn-submit-form" class="form-control" value="Registrarse">
+                        </div>
+                        <div class="form-group">
+                            <table id="tableUsers">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Telefono</th>
+                                        <th>Correo</th>
+                                        <th>Contraseña</th>
+                                    </tr>
+                                </thead>
+                               <tbody><td></td><td></td><td></td><td></td><td></td></tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
